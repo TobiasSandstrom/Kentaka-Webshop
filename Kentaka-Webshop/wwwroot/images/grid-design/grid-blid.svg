@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1110" height="662" viewBox="0 0 1110 662">
+  <g id="Group_1176" data-name="Group 1176" transform="translate(-405 -1321)">
+    <rect id="Category_image_5" data-name="Category image 5" width="214" height="214" rx="6" transform="translate(853 1545)" fill="#ccc"/>
+    <rect id="Category_image_6" data-name="Category image 6" width="438" height="214" rx="6" transform="translate(853 1769)" fill="#ccc"/>
+    <rect id="Category_image_1" data-name="Category image 1" width="214" height="214" rx="6" transform="translate(405 1321)" fill="#ccc"/>
+    <rect id="Category_image_2" data-name="Category image 2" width="438" height="214" rx="6" transform="translate(629 1321)" fill="#ccc"/>
+    <rect id="Category_image_3" data-name="Category image 3" width="438" height="438" rx="6" transform="translate(1077 1321)" fill="#ccc"/>
+    <rect id="Category_image_4" data-name="Category image 4" width="438" height="438" rx="6" transform="translate(405 1545)" fill="#ccc"/>
+    <rect id="Category_image_7" data-name="Category image 7" width="214" height="214" rx="6" transform="translate(1301 1769)" fill="#ccc"/>
+    <path id="Rectangle_297" data-name="Rectangle 297" d="M0,0H101a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(405 1497)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_302" data-name="Rectangle 302" d="M0,0H101a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(853 1721)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_303" data-name="Rectangle 303" d="M0,0H101a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(1301 1945)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_298" data-name="Rectangle 298" d="M0,0H213a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(629 1497)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_299" data-name="Rectangle 299" d="M0,0H213a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(405 1945)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_300" data-name="Rectangle 300" d="M0,0H213a6,6,0,0,1,6,6V38a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(1077 1721)" fill="#0e153d" opacity="0.85"/>
+    <path id="Rectangle_337" data-name="Rectangle 337" d="M0,0H213a6,6,0,0,1,6,6V75a0,0,0,0,1,0,0H6a6,6,0,0,1-6-6V0A0,0,0,0,1,0,0Z" transform="translate(853 1908)" fill="#0e153d" opacity="0.85"/>
+    <text id="Men" transform="translate(420 1522)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Men</tspan></text>
+    <text id="Hats" transform="translate(868 1746)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Hats</tspan></text>
+    <text id="Watches" transform="translate(1316 1970)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Watches</tspan></text>
+    <text id="Women" transform="translate(644 1522)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Women</tspan></text>
+    <text id="Shoes" transform="translate(420 1970)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Shoes</tspan></text>
+    <text id="Kids" transform="translate(1092 1746)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Kids</tspan></text>
+    <text id="_18_products" data-name="18 products" transform="translate(868 1963)" fill="#fff" font-size="14" font-family="Roboto-Regular, Roboto"><tspan x="0" y="0">18 products</tspan></text>
+    <text id="Sunglasses" transform="translate(868 1940)" fill="#20d3c2" font-size="16" font-family="Roboto-Medium, Roboto" font-weight="500"><tspan x="0" y="0">Sunglasses</tspan></text>
+  </g>
+</svg>

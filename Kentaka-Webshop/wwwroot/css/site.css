@@ -1,0 +1,884 @@
+
+/*--------------------------------------------------------------------------------- Standard CSS ---------------------------------------------------------------------------------*/
+
+body {
+    box-sizing: border-box;
+}
+
+
+
+/*--------------------------------------------------------------------------------- Rasmus CSS ---------------------------------------------------------------------------------*/
+/*Rasmus 30 sale kod*/
+/*---------------------------------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.sale-banner .background-image {
+    background-color: #CCCCCC;
+    width: 100%;
+    z-index: -1;
+}
+
+.banner-flex {
+    display: flex;
+}
+
+
+    .banner-flex h1 {
+        font-size: 14px;
+        color: #FFFFFF;
+        line-height: 24px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 15px;
+        font-weight: 400;
+    }
+
+.green-sale {
+    display: block;
+    margin-left: auto;
+    padding-left: 75px;
+    background-color: #20D3C2;
+    padding: 120px 30px;
+}
+
+    .green-sale h1 {
+        font-size: 60px;
+        padding-bottom: 25px;
+        font-weight: 700;
+    }
+
+    .green-sale h3 {
+        font-size: 16px;
+        color: #FFFFFF;
+        font-weight: 400;
+        padding-bottom: 15px;
+        padding-left: 12px;
+    }
+
+.OFFtext {
+    font-size: 30px;
+    color: #FFFFFF;
+    padding-left: 10px;
+    padding-top: 8px;
+    font-weight: 700;
+}
+
+.button-green {
+    display: block;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    border: none;
+    color: #20D3C2;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
+
+.button-black {
+    display: block;
+    background-color: black;
+    border-radius: 22px;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25px;
+}
+
+.right-side {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 10px;
+}
+
+#discount {
+    display: flex;
+    font-size: 50px;
+}
+
+
+#top-seller .title-name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 118px;
+}
+
+#top-seller .title-wave {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24px;
+}
+
+#top-seller .description {
+    display: block;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 31px;
+}
+
+#top-seller .grid-section {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-content: center;
+    padding-top: 40px;
+}
+
+    #top-seller .grid-section .grid {
+        padding-right: 5px;
+    }
+
+#top-seller .grid-compare .women {
+    padding-left: 5px;
+}
+
+#top-seller .grid-compare .darkblue {
+    padding-left: 5px;
+    padding-top: 10px;
+}
+/*---------------------------NEW ARRIVALS---------------------------------------*/
+.product-section {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .product-section .product-container {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .product-section .header-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
+
+    .product-section .all-products {
+        display: flex;
+        margin-left: 410px;
+        margin-right: auto;
+        width: 50%;
+        gap: 30px;
+    }
+
+    .product-section .pre-btn {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .product-section .nxt-btn {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .product-section .three-dots {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+
+
+
+/*----------------------------------------------------------------------------- FEATURED PRODUCTS ------------------------------------------------------------------------------*/
+
+.product-sections {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    .product-sections .product-container {
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .product-sections .header-img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 40px;
+        padding-top: 100px;
+    }
+
+    .product-sections .all-products {
+        display: flex;
+        margin-left: 410px;
+        margin-right: auto;
+        width: 50%;
+        gap: 30px;
+    }
+
+    .product-sections .pre-btn {
+        position: relative;
+        top: 50%;
+        left: 0;
+    }
+
+    .product-sections .nxt-btn {
+        position: relative;
+        top: 50%;
+        right: 0;
+    }
+
+    .product-sections .three-dots {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 30px;
+    }
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Poppins:wght@200;400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+
+/*Home Header kod*/
+
+body {
+    box-sizing: border-box;
+}
+
+.green-text {
+    color: #20D3C2 !important;
+}
+
+#header-section {
+    background-color: #EEEEEE;
+}
+
+    #header-section #header-container {
+        max-width: 1140px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+        #header-section #header-container #header-left h1 {
+            font-family: "play", sans-serif;
+            color: #0E153D;
+            font-size: 60px;
+        }
+
+        #header-section #header-container #header-left p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+        }
+
+        #header-section #header-container #header-left button {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            background-color: #FFFFFF;
+            border-radius: 30px;
+            border: none;
+            font-weight: 500;
+            height: 55px;
+            width: 155px;
+        }
+
+        #header-section #header-container #header-right img {
+            max-height: 600px;
+            max-width: 635px;
+        }
+
+
+/*Subscribe Section*/
+
+#subscribe-section {
+    margin-top: 50px;
+    background-color: #F6F6F6;
+}
+
+    #subscribe-section #subscribe-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        max-width: 1140px;
+    }
+
+        #subscribe-section #subscribe-container #subscribe-left h1 {
+            font-family: "play", sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        #subscribe-section #subscribe-container #subscribe-left p {
+            font-size: 16px;
+            font-family: "roboto", sans-serif;
+            font-weight: 400;
+            margin: 30px 0px;
+        }
+
+        #subscribe-section #subscribe-container #subscribe-left form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: white;
+            padding: 5px 10px;
+            border: 1px solid #E3E3E3;
+            border-radius: 30px;
+        }
+
+        #subscribe-section #subscribe-container #subscribe-left #subscribe-input {
+            background-color: transparent;
+            border: none;
+            font-size: 14px;
+            height: 42px;
+            width: 380px;
+            outline: none;
+        }
+
+            #subscribe-section #subscribe-container #subscribe-left #subscribe-input input {
+                flex-grow: 2;
+                border: none;
+            }
+
+        #subscribe-section #subscribe-container #subscribe-left .green-btn {
+            background-color: #20D3C2;
+            color: #ffffff;
+            border-radius: 30px;
+            font-size: 16px;
+            font-family: "roboto" sans-serif;
+            padding: 10px 15px;
+            border: none;
+        }
+
+
+/*Logos Section*/
+
+#logos-section #logos-container {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*Review Carousel Section*/
+
+#reviewCarousel-section {
+    background-color: #0E153D;
+    height: 720px;
+}
+
+    #reviewCarousel-section #carouselExampleIndicators2 .carousel-indicators button {
+        height: 12px;
+        width: 12px;
+        border-radius: 35%;
+        background-color: #ffffff !important;
+    }
+
+    #reviewCarousel-section #carouselExampleIndicators2 .carousel-indicators:active {
+        background: #20D3C2 !important;
+    }
+
+    #reviewCarousel-section #carouselExampleIndicators2 .carousel-indicators .active {
+        background-color: #20D3C2 !important;
+    }
+
+    #reviewCarousel-section #carouselExampleIndicators2 .white-circle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #20D3C2;
+        height: 65px;
+        width: 65px;
+        border-radius: 50px;
+    }
+
+        #reviewCarousel-section #carouselExampleIndicators2 .white-circle i {
+            font-size: 20px;
+        }
+
+    #reviewCarousel-section #carouselExampleIndicators2 :hover .white-circle {
+        background-color: #ffffff;
+    }
+
+    #reviewCarousel-section #carouselExampleIndicators2 :hover i {
+        color: black;
+    }
+
+    #reviewCarousel-section #carouselExampleIndicators2 :hover .carousel-control-next-icon {
+        color: black !important;
+    }
+
+    #reviewCarousel-section .carousel-item .carousel-item-container {
+        text-align: center;
+    }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container img {
+            margin: auto;
+        }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container .review-quote {
+            margin-bottom: 50px;
+        }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container .review-stars {
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container .carousel-item-text h4 {
+            font-size: 18px;
+            font-family: "roboto", sans-serif;
+            font-weight: 500;
+        }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container .carousel-item-text small {
+            font-size: 14px;
+            font-family: "roboto", sans-serif;
+            color: #ffffff;
+        }
+
+        #reviewCarousel-section .carousel-item .carousel-item-container .carousel-item-text .carousel-ptext {
+            margin: auto;
+            text-align: center;
+            max-width: 60%;
+            margin-top: 30px;
+            margin-bottom: 80px;
+        }
+
+            #reviewCarousel-section .carousel-item .carousel-item-container .carousel-item-text .carousel-ptext p {
+                font-size: 16px;
+                font-family: "roboto", sans-serif;
+                color: #ffffff;
+            }
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
+
+/*--------------------------------------------------------------------------------- Saif CSS ---------------------------------------------------------------------------------*/
+#falsh-sale {
+    display: flex;
+    background-color: #0E153D;
+    height: 435px;
+}
+
+.column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-left: 100px;
+}
+
+#multe-pic {
+    justify-content: center;
+    margin-top: 150px;
+    width: 400px;
+    margin-right: 120px;
+}
+
+#Carousel2-section .container .pic1 {
+    margin-right: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .pic2 {
+    margin-left: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .pic3 {
+    margin-left: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .pic4 {
+    margin-right: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .pic5 {
+    margin-left: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .pic6 {
+    margin-right: 150px;
+    width: 490px;
+}
+
+#Carousel2-section .container .circle1 {
+    background-color: #20D3C2;
+    color: white;
+    width: 50px;
+    height: 50px;
+    justify-content: center;
+}
+
+#Latest-Blog .two-color-text {
+    align-content: center;
+    font: bold;
+    align-items: center;
+    margin-left: 540px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.latest-blu {
+    color: #0E153D;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.blog-green {
+    font-size: 36px;
+    color: #20D3C2;
+    font-weight: bold;
+}
+
+#Latest-Blog .ziqzk-pic {
+    align-items: center;
+    margin-left: 530px;
+    margin-bottom: 20px;
+}
+
+#Latest-Blog .post-about {
+    font-size: 16px;
+    align-items: center;
+    margin-left: 445px;
+    margin-bottom: 25px;
+    color: #0E153D;
+}
+
+#three-punkt-pic .dots-pic {
+    margin-top: 15px;
+    margin-left: 735px;
+    margin-bottom: 55px;
+}
+
+#footer-design {
+    display: flex;
+    background-color: #0E153D;
+    height: 460px;
+    color: azure;
+}
+
+    #footer-design .column {
+        flex: 1;
+        display: flex;
+        margin-left: 200px;
+    }
+
+    #footer-design .kenak-text1 {
+        font-size: 14px;
+        width: 245px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    #footer-design .follow-us span {
+        margin-left: 15px;
+    }
+
+#footer-design1 .column {
+    display: flex;
+    margin-left: 10px;
+}
+
+#footer-design1 .contact-info {
+    font-size: 18px;
+    color: #20D3C2;
+    margin-bottom: 20px;
+}
+
+.address {
+    color: #20D3C2;
+    font-size: 16px;
+}
+
+.solna-park {
+    color: azure;
+    font-size: 15px;
+    width: 150px;
+}
+
+.phone {
+    color: #20D3C2;
+    font-size: 16px;
+}
+
+.phone-n {
+    color: azure;
+    font-size: 15px;
+}
+
+.email {
+    color: #20D3C2;
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+.email-1 {
+    color: azure;
+    font-size: 15px;
+}
+
+.email-2 {
+    color: azure;
+    font-size: 15px;
+}
+
+#useful .column {
+    align-content: stretch;
+    margin-left: 100px;
+    padding-right: 150px;
+}
+
+#useful .use-ful {
+    font-size: 18px;
+    color: #20D3C2;
+    margin-bottom: 20px;
+}
+
+.privacy {
+    color: azure;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.terms {
+    font-size: 16px;
+    color: #20D3C2;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.Contact-Us {
+    color: azure;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+.our-sit {
+    color: azure;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+.lastest {
+    color: azure;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+.Returns {
+    color: azure;
+    font-size: 16px;
+    font-family: 'Roboto';
+    margin-bottom: 15px;
+}
+
+#instagram .column .content {
+    padding-right: 350px;
+    margin-left: -300px;
+}
+
+.recent-insta {
+    font-size: 18px;
+    color: #20D3C2;
+    margin-bottom: 20px;
+}
+
+#black-footer {
+    background-color: #080C24;
+    height: 80px;
+    display: flex;
+}
+
+    #black-footer .copy-right {
+        font-size: 16px;
+        color: azure;
+        justify-content: center;
+        padding-top: 30px;
+        margin-left: 100px;
+    }
+
+.payment-image {
+    align-content: center;
+    margin-left: -395px;
+    padding-top: 20px;
+}
+
+#reklam-grid {
+    margin: 70px 60px 70px 60px;
+    justify-content: space-between;
+    display: flex;
+}
+
+#box-1 {
+    height: 137px;
+    width: 345px;
+    background-color: #E4F6F4;
+    border-radius: 5px;
+}
+
+.box1-image {
+    margin: 40px 40px 40px -60px;
+}
+
+.free-ship {
+    justify-content: center;
+    color: #20D3C2;
+    font-size: 16px;
+    margin-top: -110px;
+    margin-left: 10px;
+}
+
+.for-local {
+    font-size: 14px;
+    color: #0E153D;
+    width: 240px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+#box-2 {
+    height: 137px;
+    width: 345px;
+    background-color: #20D3C2;
+    border-radius: 5px;
+}
+
+.box2-image {
+    margin: 40px 40px 40px -60px;
+}
+
+.support-24 {
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+    margin-top: -110px;
+    margin-left: 10px;
+}
+
+.for-any {
+    font-size: 14px;
+    color: white;
+    width: 240px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+#box-3 {
+    height: 137px;
+    width: 345px;
+    background-color: #E4F6F4;
+    border-radius: 5px;
+}
+
+.box3-image {
+    margin: 40px 40px 40px -60px;
+}
+
+.online-pay {
+    justify-content: center;
+    color: #20D3C2;
+    font-size: 16px;
+    margin-top: -110px;
+    margin-left: 10px;
+}
+
+.you-can {
+    font-size: 14px;
+    color: #0E153D;
+    width: 240px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+#box-4 {
+    height: 137px;
+    width: 345px;
+    background-color: #E4F6F4;
+    border-radius: 5px;
+}
+
+.box4-image {
+    margin: 40px 40px 40px -60px;
+}
+
+.fast-del {
+    justify-content: center;
+    color: #20D3C2;
+    font-size: 16px;
+    margin-top: -110px;
+    margin-left: 10px;
+}
+
+.we-under {
+    font-size: 14px;
+    color: #0E153D;
+    width: 240px;
+    font-family: 'Roboto';
+    margin-left: 10px;
+}
+
+#gridd .column {
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    display: flex;
+}
+
+.content {
+}
+
+.grido .gridd-image {
+    align-items: center;
+    justify-content: center;
+    margin-left: 340px;
+}
+
+.gridd-1-image {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 380px;
+}
+
+.we-always {
+    margin-left: 220px;
+    margin-bottom: 40px;
+}
+
+.gridd-image1 {
+    margin-bottom: 50px;
+}
+/**/
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
