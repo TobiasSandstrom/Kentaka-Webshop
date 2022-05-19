@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Kentaka_Webshop.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kentaka_Webshop.Data
 {
@@ -11,5 +12,7 @@ namespace Kentaka_Webshop.Data
         public SqlDbContext(DbContextOptions<SqlDbContext> options) : base(options)
         {
         }
+
+        public virtual DbSet<TestProductEntity> TestProducts { get; set; } = null!;
     }
 }
