@@ -177,14 +177,14 @@ body {
 
     .product-section .pre-btn {
         position: relative;
-        top: 0;
-        left: 0;
+        top: 225px;
+        left: 325px;
     }
 
     .product-section .nxt-btn {
         position: relative;
-        top: 0;
-        left: 0;
+        top: 225px;
+        left: 1475px;
     }
 
     .product-section .three-dots {
@@ -227,14 +227,14 @@ body {
 
     .product-sections .pre-btn {
         position: relative;
-        top: 50%;
-        left: 0;
+        top: 225px;
+        left: 325px;
     }
 
     .product-sections .nxt-btn {
         position: relative;
-        top: 50%;
-        right: 0;
+        top: 225px;
+        left: 1475px;
     }
 
     .product-sections .three-dots {
