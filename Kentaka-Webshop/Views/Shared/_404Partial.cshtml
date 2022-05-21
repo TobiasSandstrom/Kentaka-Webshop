@@ -3,8 +3,8 @@
         <img src="~/images/404Page/404.png" alt="">
         <p>Oops! The page you are looking for doesn´t exist.</p>
         <div id="error-buttons-container">
-            <button id="home-btn">HOME</button>
-            <button id="contact-btn">CONTACT US</button>
+            <a asp-action="Index"><button id="home-btn">HOME</button></a>
+            <a asp-controller="Contact" asp-action="Index"><button id="contact-btn">CONTACT US</button></a>
         </div>
     </div>
 </div>
