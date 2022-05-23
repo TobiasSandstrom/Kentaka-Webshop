@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Managers\" />
+    <Folder Include="Models\CategoryModels\" />
   </ItemGroup>
 
 </Project>
