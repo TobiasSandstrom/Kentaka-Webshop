@@ -105,9 +105,24 @@ namespace Kentaka_Webshop.Managers
             return category;
         }
 
-        public Task<CategoryResult> UpdateAsync(CategoryUpdateModel model)
+        public async Task<CategoryResult> UpdateAsync(CategoryUpdateModel model)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Categories.Where(x => x.Id == model.Id).FirstOrDefaultAsync();
+            CategoryResult res = new CategoryResult();
+            if (entity == null)
+            {
+                res.Result = false;
+                res.Message = "Cant find category with that id";
+                return res;
+            }
+
+            entity.CategoryName = model.NewCategoryName;
+            _context.Categories.Update(entity);
+            await _context.SaveChangesAsync();
+
+            res.Result = true;
+            res.Message = "Category updated succesfully";
+            return res;
         }
     }
 }
