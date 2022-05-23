@@ -1,13 +1,13 @@
-﻿<section id="MY-account-view">
+﻿<section id="MY-account-view" class="m-5 d-flex">
     <div class="banner-flex container" >
-        <form class="p-4 col-3" id="log-in-view">
+        <form class="p-4 m-4 col-3" id="log-in-view">
       <h5 class="mb-2"> LOGIN</h5>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email </label>
+    <label for="exampleInputEmail1" class="form-label">Email *</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-4">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <label for="exampleInputPassword1" class="form-label">Password *</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
   <button type="submit" class="btn mb-4">LOG IN</button>
@@ -29,20 +29,24 @@
 
 
 </form>
-      <form class="p-3 col-3">
+      <form class="p-4 m-4 col-3" id="register-form">
       <h5 class="mb-3"> Register</h5>
-      <div class="mb-3" id="register-form">Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</div>
+      <div class="mb-3" >Registering for this site allows you to access your order status and history. Just fill in the fields below, and we’ll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.</div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email address * </label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <label for="exampleInputPassword1" class="form-label">Password *</label>
     <input type="password" class="form-control" id="exampleInputPassword1">
   </div>
-    <div class="mb-3">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Confirm Password *</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+    <div class="mb-5">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our <spn class="policy">privacy policy.</spn></div>
   
-  <button type="submit" class="btn btn-primary">REGISTER</button>
+  <button type="submit" class="btn mb-4">REGISTER</button>
 </form>
 
     </div>

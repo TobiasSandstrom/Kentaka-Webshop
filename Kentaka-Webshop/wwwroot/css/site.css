@@ -950,6 +950,23 @@ body {
     text-decoration:none;
     
 }
+#MY-account-view{
+    padding-left:110px;
+}
+#register-form {
+    width: 540px;
+    height: 668px;
+    background: #F6F6F6;
+}
+.policy {
+    color: #20D3C2;
+}
+.btn {
+    background-color: #20D3C2;
+    color: aliceblue;
+    width: 100%;
+    border-radius: 50px;
+}
 
 /**/
 
