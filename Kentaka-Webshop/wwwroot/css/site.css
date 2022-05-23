@@ -944,9 +944,11 @@ body {
     border-radius:50px;
 }
 .lost-your {
-   margin-left:320px;
+   margin-left:210px;
     color: #20D3C2;
     margin-top:-25px;
+    text-decoration:none;
+    
 }
 
 /**/
