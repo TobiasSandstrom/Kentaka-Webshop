@@ -11,7 +11,7 @@ namespace Kentaka_Webshop.Managers
             Task<CategoryResult> UpdateAsync(CategoryUpdateModel model);
             Task<CategoryViewModel> GetOne(int id);
             Task<List<CategoryViewModel>> GetAllAsync();
-            Task DeleteAsync(int id);
+            Task<CategoryResult> DeleteAsync(int id);
         }
 
     public class CategoryManager : ICategoryManager
@@ -30,15 +30,11 @@ namespace Kentaka_Webshop.Managers
         public async Task<CategoryResult> CreateAsync(CategoryCreateModel model)
         {
             var oldCategory = await _context.Categories.Where(x => x.CategoryName == model.CategoryName).FirstOrDefaultAsync();
-
+            CategoryResult res = new CategoryResult();
             if (oldCategory != null)
             {
-                CategoryResult res = new CategoryResult
-                {
-                    Result = false,
-                    Message = "Category with that name already exists"
-                };
-
+                res.Result = false;
+                res.Message = "Category with that name already exists";
                 return res;
             }
 
@@ -48,20 +44,34 @@ namespace Kentaka_Webshop.Managers
             };
 
             await _context.Categories.AddAsync(newCategory);
-            _context.SaveChanges();
-            CategoryResult result = new CategoryResult
-            {
-                Result = true,
-                Message = "Category created succesfully"
-            };
+            await _context.SaveChangesAsync();
 
-            return result;
+            res.Result = true;
+            res.Message = "Category created succesfully";
+
+
+            return res;
         }
 
-        public Task DeleteAsync(int id)
+
+        public async Task<CategoryResult> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            CategoryEntity entity = await _context.Categories.FindAsync(id);
+            CategoryResult res = new CategoryResult();
+            if (entity == null)
+            {
+                res.Result = false;
+                res.Message = "Cant find category with that id";
+                return res;
+            }
+
+            _context.Categories.Remove(entity);
+            await _context.SaveChangesAsync();
+            res.Result = true;
+            res.Message = "Category removed succesfully";
+            return res;
         }
+
 
         public Task<List<CategoryViewModel>> GetAllAsync()
         {
