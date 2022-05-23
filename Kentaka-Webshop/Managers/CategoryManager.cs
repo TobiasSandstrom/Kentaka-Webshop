@@ -91,9 +91,18 @@ namespace Kentaka_Webshop.Managers
             return categoryList;
         }
 
-        public Task<CategoryViewModel> GetOne(int id)
+        public async Task<CategoryViewModel> GetOne(int id)
         {
-            throw new NotImplementedException();
+            var entity = await _context.Categories.Where(x => x.Id == id).FirstOrDefaultAsync();
+            var category = new CategoryViewModel();
+            if (entity == null)
+            {
+                category.CategoryName = "";
+                return category;
+            }
+
+            category.CategoryName = entity.CategoryName;
+            return category;
         }
 
         public Task<CategoryResult> UpdateAsync(CategoryUpdateModel model)
