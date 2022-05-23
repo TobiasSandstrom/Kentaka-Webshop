@@ -1,4 +1,5 @@
 ﻿using Kentaka_Webshop.Entity;
+using Kentaka_Webshop.Models.CategoryModels;
 
 namespace Kentaka_Webshop.Managers
 {
