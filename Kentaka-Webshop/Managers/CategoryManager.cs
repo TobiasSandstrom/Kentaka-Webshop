@@ -1,6 +1,7 @@
 ﻿using Kentaka_Webshop.Data;
 using Kentaka_Webshop.Entity;
 using Kentaka_Webshop.Models.CategoryModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kentaka_Webshop.Managers
 {
@@ -24,9 +25,37 @@ namespace Kentaka_Webshop.Managers
         }
 
 
-        public Task<CategoryResult> CreateAsync(CategoryCreateModel model)
+
+
+        public async Task<CategoryResult> CreateAsync(CategoryCreateModel model)
         {
-            throw new NotImplementedException();
+            var oldCategory = await _context.Categories.Where(x => x.CategoryName == model.CategoryName).FirstOrDefaultAsync();
+
+            if (oldCategory != null)
+            {
+                CategoryResult res = new CategoryResult
+                {
+                    Result = false,
+                    Message = "Category with that name already exists"
+                };
+
+                return res;
+            }
+
+            CategoryEntity newCategory = new CategoryEntity
+            {
+                CategoryName = model.CategoryName
+            };
+
+            await _context.Categories.AddAsync(newCategory);
+            _context.SaveChanges();
+            CategoryResult result = new CategoryResult
+            {
+                Result = true,
+                Message = "Category created succesfully"
+            };
+
+            return result;
         }
 
         public Task DeleteAsync(int id)
