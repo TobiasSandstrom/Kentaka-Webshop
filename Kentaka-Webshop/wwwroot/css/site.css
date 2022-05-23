@@ -931,6 +931,24 @@ body {
 .gridd-image1 {
     margin-bottom: 50px;
 }
+
+#log-in-view {
+    width: 540px;
+    height: 522px;
+    background: #F6F6F6;
+}
+.btn {
+    background-color: #20D3C2;
+    color:aliceblue;
+    width:100%;
+    border-radius:50px;
+}
+.lost-your {
+   margin-left:320px;
+    color: #20D3C2;
+    margin-top:-25px;
+}
+
 /**/
 
 
