@@ -5,16 +5,18 @@ namespace Kentaka_Webshop.Controllers
 {
     public class ContactController : Controller
     {
-        public readonly CategoryManager _categorymManager;
+        public readonly ICategoryManager _categoryManager;
 
-        public ContactController(CategoryManager categorymManager)
+        public ContactController(ICategoryManager categoryManager)
         {
-            _categorymManager = categorymManager;
+            _categoryManager = categoryManager;
         }
+
+
         [HttpGet]
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var categories = _categorymManager.GetAllAsync();
+            var categories = await _categoryManager.GetAllAsync();
             return View(categories);
         }
         

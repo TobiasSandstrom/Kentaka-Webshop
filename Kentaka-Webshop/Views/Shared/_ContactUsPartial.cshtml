@@ -1,4 +1,7 @@
-﻿<div id="contact-section">
+﻿@using Kentaka_Webshop.Models.CategoryModels
+@model List<CategoryViewModel>
+
+<div id="contact-section">
     <div id="contact-map">
         <img id="img-map" src="images/Contact-Us/Contact-GoogleMaps.png" alt="">
         <img id="img-pin" src="images/Contact-Us/Contact-MapPin.png" alt="">
@@ -58,7 +61,10 @@
                             <div class="col-md-12">
                                 <select class="form-control mb-2" placeholder="3">
                                     <option selected="selected" disabled> Product Category</option>
-                                    <option>Kategorier</option>
+                                    @foreach(var c in Model)
+                                    {
+                                        <option>@c.CategoryName</option>
+                                    }
                                 </select>
                             </div>
                             <div class="col-md-12">
