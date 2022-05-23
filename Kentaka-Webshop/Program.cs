@@ -1,4 +1,5 @@
 using Kentaka_Webshop.Data;
+using Kentaka_Webshop.Managers;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -6,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SqlDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Sql")));
+builder.Services.AddScoped<ICategoryManager, CategoryManager>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
