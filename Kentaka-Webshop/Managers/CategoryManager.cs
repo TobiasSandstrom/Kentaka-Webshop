@@ -73,9 +73,22 @@ namespace Kentaka_Webshop.Managers
         }
 
 
-        public Task<List<CategoryViewModel>> GetAllAsync()
+        public async Task<List<CategoryViewModel>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var entitiyList = await _context.Categories.ToListAsync();
+            var categoryList = new List<CategoryViewModel>();
+            foreach (var e in entitiyList)
+            {
+                CategoryViewModel category = new CategoryViewModel()
+                {
+                    CategoryName = e.CategoryName
+                };
+
+                category.CategoryName = e.CategoryName;
+                categoryList.Add(category);
+            }
+
+            return categoryList;
         }
 
         public Task<CategoryViewModel> GetOne(int id)
