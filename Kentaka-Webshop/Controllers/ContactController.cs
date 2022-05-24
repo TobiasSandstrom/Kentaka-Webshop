@@ -20,8 +20,8 @@ namespace Kentaka_Webshop.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var categories = await _categoryManager.GetAllAsync();
             var result = new ContactDataModel();
+            var categories = await _categoryManager.GetAllAsync();
 
             result.Categories = categories;
 
@@ -32,16 +32,18 @@ namespace Kentaka_Webshop.Controllers
         public async Task<IActionResult> Index(ContactMessageForm form)
         {
             var result = new ContactDataModel();
+            var categories = await _categoryManager.GetAllAsync();
+            result.Categories = categories;
+            var _res = new ContactMessageResult();
 
             if (ModelState.IsValid)
             {
-                
                 result.Result = await _messageManager.CreateAsync(form);
                 return View(result);
                 
             }
-
-            result.Result.Message = "Modelstate invalid";
+            _res.Message = "Modelstate invalid";
+            result.Result = _res;
             return View(result);
         }
 

@@ -9,8 +9,8 @@ namespace Kentaka_Webshop.Models
         {
         }
 
-        public ContactMessageForm Form { get; set; } = null!;
-        public List<CategoryViewModel> Categories { get; set; } = null!;
-        public ContactMessageResult Result { get; set; } = null!;
+        public ContactMessageForm Form { get; set; } = new ContactMessageForm();
+        public List<CategoryViewModel> Categories { get; set; } = new List<CategoryViewModel>();
+        public ContactMessageResult Result { get; set; } = new ContactMessageResult();
     }
 }

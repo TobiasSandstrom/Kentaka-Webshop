@@ -1,5 +1,5 @@
 ﻿@using Kentaka_Webshop.Models.CategoryModels
-@model List<CategoryViewModel>
+@model ContactDataModel
 
 <div id="contact-section">
     <div id="contact-map">
@@ -56,35 +56,21 @@
             <div id="contact-lower-right">
 
                 <div id="contact-form">
-                    <form action="submit">
+                    <form asp-action="Index">
                         <div class="form-row">
                             <div class="col-md-12">
                                 <select class="form-control mb-2" placeholder="3">
                                     <option selected="selected" disabled> Product Category</option>
-                                    @foreach(var c in Model)
+                                    @foreach (var c in Model.Categories)
                                     {
                                         <option>@c.CategoryName</option>
                                     }
                                 </select>
                             </div>
-                            <div class="col-md-12">
-                                <input class="form-control mb-2" type="text" placeholder="Name">
-                            </div>
-                            <div class="col-md-12">
-                                <input class="form-control mb-2" type="email" placeholder="Email">
-                            </div>
-                            <div class="col-md-12">
-                                <input class="form-control mb-2" type="text" placeholder="Subject">
-                            </div>
-
-                            <textarea class="mb-4" name="contact-message" id="contact-us-message" cols="60" rows="8" placeholder="Message"></textarea>
-
-
-
+                            <partial name="_ContactFormPartial" model="Model.Form"/>
+                            <span>@Model.Result.Message</span>
                             <button id="form-submit-btn">SEND MESSAGE</button>
-
                         </div>
-
                     </form>
                 </div>
             </div>
