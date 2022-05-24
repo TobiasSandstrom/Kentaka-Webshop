@@ -8,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SqlDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Sql")));
 builder.Services.AddScoped<ICategoryManager, CategoryManager>();
+builder.Services.AddScoped<IMessageManager, ContactUsMessageManager>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
