@@ -83,9 +83,21 @@ namespace Kentaka_Webshop.Managers
             return res;
         }
 
-        public Task<ContactMessageResult> DeleteAsync(int id)
+        public async Task<ContactMessageResult> DeleteAsync(int id)
         {
-            throw new NotImplementedException();
+            var message = await _context.ContactMessages.Where(x => x.Id == id).FirstOrDefaultAsync();
+            ContactMessageResult res = new ContactMessageResult();
+            if (message == null)
+            {
+                res.Message = "Cant find message with that id";
+                return res;
+            }
+
+            _context.ContactMessages.Remove(message);
+            await _context.SaveChangesAsync();
+            res.Result = true;
+            res.Message = "Message removed succesfully";
+            return res;
         }
 
         public Task<List<ContactMessageViewModel>> GetAllAsync()
