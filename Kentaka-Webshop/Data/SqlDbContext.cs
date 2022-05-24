@@ -1,9 +1,10 @@
 ﻿using Kentaka_Webshop.Entity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Kentaka_Webshop.Data
 {
-    public class SqlDbContext : DbContext
+    public class SqlDbContext :   IdentityDbContext
     {
         public SqlDbContext()
         {
