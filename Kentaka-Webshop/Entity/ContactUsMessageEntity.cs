@@ -23,5 +23,8 @@ namespace Kentaka_Webshop.Entity
         [Required, Column(TypeName = "Nvarchar(500)")]
         public string UserMessage { get; set; }
 
+        [Required]
+        public bool HasBeenAnswered { get; set; } = false;
+
     }
 }
