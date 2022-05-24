@@ -1,4 +1,6 @@
 ﻿using Kentaka_Webshop.Data;
+using Kentaka_Webshop.Models.ContactMessageModels;
+using Microsoft.EntityFrameworkCore;
 
 namespace Kentaka_Webshop.Managers
 {
@@ -20,9 +22,32 @@ namespace Kentaka_Webshop.Managers
             _context = context;
         }
 
-        public Task<ContactMessageResult> ChangeToAnsweredAsync(int id)
+
+
+        public async Task<ContactMessageResult> ChangeToAnsweredAsync(int id)
         {
-            throw new NotImplementedException();
+            var message = await _context.ContactMessages.Where(x => x.Id == id).FirstOrDefaultAsync();
+            ContactMessageResult res = new ContactMessageResult();
+            if (message == null)
+            {
+                res.Message = "Cant find message with that id";
+                return res;
+            }
+            if (message.HasBeenAnswered == true)
+            {
+                res.Message = "Message already marked as answered";
+                return res;
+            }
+
+            message.HasBeenAnswered = true;
+            _context.ContactMessages.Update(message);
+            await _context.SaveChangesAsync();
+
+            res.Result = true;
+            res.Message = "Message is now marked as answered";
+            return res;
+
+
         }
 
         public Task<ContactMessageResult> CreateAsync(ContactMessageForm form)
