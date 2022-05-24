@@ -21,7 +21,7 @@ namespace Kentaka_Webshop.Controllers
         public async Task<IActionResult> Index()
         {
             var categories = await _categoryManager.GetAllAsync();
-            var result = new CategoriesAndContactResultModel();
+            var result = new ContactDataModel();
 
             result.Categories = categories;
 
@@ -31,7 +31,7 @@ namespace Kentaka_Webshop.Controllers
         [HttpPost]
         public async Task<IActionResult> Index(ContactMessageForm form)
         {
-            var result = new CategoriesAndContactResultModel();
+            var result = new ContactDataModel();
 
             if (ModelState.IsValid)
             {
