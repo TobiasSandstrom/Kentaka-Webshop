@@ -100,14 +100,58 @@ namespace Kentaka_Webshop.Managers
             return res;
         }
 
-        public Task<List<ContactMessageViewModel>> GetAllAsync()
+        public async Task<List<ContactMessageViewModel>> GetAllAsync()
         {
-            throw new NotImplementedException();
+            var entityList = await _context.ContactMessages.ToListAsync();
+            var messageList = new List<ContactMessageViewModel>();
+            foreach (var m in entityList)
+            {
+                ContactMessageViewModel message = new ContactMessageViewModel()
+                {
+                    id = m.Id,
+                    CategoryName = m.CategoryName,
+                    Subject = m.Subject,
+                    UserName = m.UserName,
+                    UserEmail = m.UserEmail,
+                    Message = m.UserMessage,
+                    HasBeenAnswered = m.HasBeenAnswered
+                };
+
+                messageList.Add(message);
+            }
+
+            return messageList;
         }
 
-        public Task<ContactMessageViewModel> GetOneAsync(int id)
+        public async Task<ContactMessageViewModel> GetOneAsync(int id)
         {
-            throw new NotImplementedException();
+            var messageModel = new ContactMessageViewModel();
+            var message = await _context.ContactMessages.Where(x => x.Id == id).FirstOrDefaultAsync();
+
+            if (message == null)
+            {
+               
+                messageModel.id = -1;
+                messageModel.CategoryName = String.Empty;
+                messageModel.Subject = String.Empty;
+                messageModel.UserName = String.Empty;
+                messageModel.UserEmail = String.Empty;
+                messageModel.Message = String.Empty;
+                messageModel.HasBeenAnswered = false;
+
+                return messageModel;
+            }
+
+            messageModel.id = message.Id;
+            messageModel.CategoryName = message.CategoryName;
+            messageModel.Subject = message.Subject;
+            messageModel.UserName = message.UserName;
+            messageModel.UserEmail = message.UserEmail;
+            messageModel.Message = message.UserMessage;
+            message.HasBeenAnswered = message.HasBeenAnswered;
+
+            return messageModel;
+            
         }
     }
 }
