@@ -1,4 +1,5 @@
 ﻿using Kentaka_Webshop.Data;
+using Kentaka_Webshop.Entity;
 using Kentaka_Webshop.Models.ContactMessageModels;
 using Microsoft.EntityFrameworkCore;
 
@@ -50,9 +51,36 @@ namespace Kentaka_Webshop.Managers
 
         }
 
-        public Task<ContactMessageResult> CreateAsync(ContactMessageForm form)
+        public async Task<ContactMessageResult> CreateAsync(ContactMessageForm form)
         {
-            throw new NotImplementedException();
+            var message = await _context.ContactMessages.Where(x => x.CategoryName == form.CategoryName
+            && x.Subject == form.Subject 
+            && x.UserName == form.UserName
+            && x.UserName == form.UserEmail
+            && x.UserMessage == form.UserMessage).FirstOrDefaultAsync();
+
+            ContactMessageResult res = new ContactMessageResult();
+
+            if (message != null)
+            {
+                res.Message = "You have already sent this mail";
+                return res;
+            }
+            ContactUsMessageEntity newMessage = new ContactUsMessageEntity()
+            {
+                CategoryName = form.CategoryName,
+                Subject = form.Subject,
+                UserName = form.UserName,
+                UserEmail = form.UserEmail,
+                UserMessage = form.UserMessage
+            };
+
+            _context.ContactMessages.Add(newMessage);
+            await _context.SaveChangesAsync();
+
+            res.Result = true;
+            res.Message = "Mail sent succesfully";
+            return res;
         }
 
         public Task<ContactMessageResult> DeleteAsync(int id)
