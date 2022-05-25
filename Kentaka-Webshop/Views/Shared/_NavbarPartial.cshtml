@@ -5,12 +5,14 @@
 }
 
 
+
     <nav class="navbar-nav">
         <div class="navbar-header">
             <div class="dropdown">
                     <div class="ENG">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             ENG
+                            <img src="/images/arrow-down.png" id="arrow-down">
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">English</a></li>
@@ -20,8 +22,9 @@
                     </div>
 
                     <div class="USD">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             USD
+                            <img src="/images/arrow-down.png" id="arrow-down">
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                             <li><a class="dropdown-item" href="#">EURO</a></li>
@@ -34,7 +37,10 @@
                         <a href="" class="text-white">Newsletter</a>
                         <a href="" class="text-white">Contact us</a>
                         <a href="" class="text-white">FAQs</a>
-                        <a href="" class="text-white">☐ ☐ ☐ ☐</a>
+
+                        <div class="box-group-image">
+                            <img src="/images/box-group.png" id="box-group-img">
+                        </div>
                     </div>
              </div>                      
         </div>
@@ -53,6 +59,7 @@
                 <div class="dropdown">
                     <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                     Categories
+                    <img src="/images/green-arrow-down.png" id="green-arrow-category">
                     </a>
 
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
@@ -98,7 +105,7 @@
 
         <div class="nav-footer-options">
         
-            <div class="dropdown">
+            <div class="browse-categories-dropdown">
                 <a class="nav-link" href="#" role="button" id="dropdownbrowse-categories" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="/images/hamburger-menu.png" id="hamburger-icon">
                 Browse Categories
@@ -111,12 +118,96 @@
                 </ul>
             </div>
 
-<div class="home-option">Home</div>
-<div class="shop-option">Shop</div>
-<div class="products-option">Products</div>
-<div class="categories-option">Categories</div>
-<div class="pages-option">Pages</div>
-<div class="blog-option">Blog</div>
+            <div id="home-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="home-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Home
+                    </a>
+                    <img src="/images/green-underlay-thing.png" id="green-underlay-thing">
 
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="shop-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="shop-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Shop
+                    <img src="/images/green-arrow-down.png" id="green-arrow-down">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="products-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="products-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Products
+                    <img src="/images/green-arrow-down.png" id="green-arrow-down">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="categories-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="categories-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                    <img src="/images/green-arrow-down.png" id="green-arrow-down">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="pages-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="pages-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages
+                    <img src="/images/green-arrow-down.png" id="green-arrow-down">
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="blog-options">
+                <div class="dropdown">
+                    <a class="nav-link" href="#" role="button" id="blog-option" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Men</a></li>
+                    <li><a class="dropdown-item" href="#">Woman</a></li>
+                    <li><a class="dropdown-item" href="#">Unisex</a></li>
+                    </ul>
+                </div>
+            </div>
+                    <div id="navbar-footer-button">
+                        <img src="/images/special-offer-button.png" id="navbar-footer-btn">
+                    </div>
         </div>
     </section>
