@@ -249,6 +249,100 @@ body {
 
 /* Rasmus Navbar kod */
 
+.navbar-nav {
+    background-color: #20D3C2;
+}
+
+    .navbar-nav .dropdown {
+        display: flex;
+        color: white;
+        margin-left: 400px;
+        margin-right: auto;
+    }
+
+        .navbar-nav .dropdown .ENG {
+            padding-right: 15px;
+        }
+
+        .navbar-nav .dropdown .reklam {
+            display: flex;
+            margin-left: 50%;
+            padding-right: 30px;
+            padding-top: 10px;
+            gap: 30px;
+            text-decoration: none
+        }
+
+            .navbar-nav .dropdown .reklam .text-white {
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+
+    .navbar-nav #navbarDarkDropdownMenuLink {
+        color: white;
+    }
+
+.navbar-showcase {
+    display: flex;
+}
+
+    .navbar-showcase .kenkata-logo {
+        padding-top: 40px;
+        padding-left: 400px;
+    }
+
+    .navbar-showcase .search-function {
+        padding-left: 95px;
+        padding-top: 25px;
+    }
+
+        .navbar-showcase .search-function #searchfunction {
+            border-radius: 30px 0px 0px 30px;
+            width: 345px;
+            height: 50px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #E3E3E3;
+            padding-left: 25px;
+            outline: none;
+        }
+
+
+
+    .navbar-showcase .dropdown {
+        height: auto;
+        width: auto;
+    }
+
+        .navbar-showcase .dropdown #dropdownMenuLink {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            width: 150px;
+            height: 50px;
+            margin-top: 25px;
+            padding-top: 12px;
+            padding-right: 35px;
+            border: 1px solid #E3E3E3;
+        }
+
+
+    .navbar-showcase .account-details {
+        display: flex;
+        margin-top: 35px;
+        margin-left: 30px;
+    }
+
+        .navbar-showcase .account-details p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            padding-top: 15px;
+        }
+
 
 /*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
 
