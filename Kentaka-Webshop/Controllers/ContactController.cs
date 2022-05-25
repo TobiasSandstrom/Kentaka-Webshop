@@ -39,6 +39,7 @@ namespace Kentaka_Webshop.Controllers
             if (ModelState.IsValid)
             {
                 result.Result = await _messageManager.CreateAsync(form);
+                ModelState.Clear();
                 return View(result);
                 
             }

@@ -53,11 +53,7 @@ namespace Kentaka_Webshop.Managers
 
         public async Task<ContactMessageResult> CreateAsync(ContactMessageForm form)
         {
-            var message = await _context.ContactMessages.Where(x => x.CategoryName == form.CategoryName
-            && x.Subject == form.Subject 
-            && x.UserName == form.UserName
-            && x.UserName == form.UserEmail
-            && x.UserMessage == form.UserMessage).FirstOrDefaultAsync();
+            var message = await _context.ContactMessages.Where(x => x.CategoryName == form.CategoryName && x.Subject == form.Subject && x.UserName == form.UserName && x.UserEmail == form.UserEmail && x.UserMessage == form.UserMessage).FirstOrDefaultAsync();
 
             ContactMessageResult res = new ContactMessageResult();
 
