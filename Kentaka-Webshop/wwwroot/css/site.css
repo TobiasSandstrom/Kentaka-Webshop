@@ -485,7 +485,7 @@ body {
 
     #contact-section #contact-container {
         margin: auto;
-        height: 770px;
+        height: 850px;
         width: 1110px;
         background-color: #0E153D;
     }
@@ -580,7 +580,15 @@ body {
                 #contact-section #contact-container #contact-lower #contact-lower-right #contact-form {
                     margin-left: 50px;
                 }
+                    #contact-section #contact-container #contact-lower #contact-lower-right #contact-form .error-text {
+                        color: #b83c33;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
 
+                #contact-section #contact-container #contact-lower #contact-lower-right #contact-form .white-text{
+                    color: white;
+                }
                     #contact-section #contact-container #contact-lower #contact-lower-right #contact-form input, #contact-section #contact-container #contact-lower #contact-lower-right #contact-form select {
                         padding-top: 10px;
                         padding-bottom: 10px;
