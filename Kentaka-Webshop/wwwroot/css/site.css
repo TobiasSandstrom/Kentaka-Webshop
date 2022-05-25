@@ -285,6 +285,7 @@ body {
 
 .navbar-showcase {
     display: flex;
+    padding-bottom: 30px;
 }
 
     .navbar-showcase .kenkata-logo {
@@ -379,6 +380,33 @@ body {
     .navbar-showcase .money-icon {
         padding-top: 18px;
     }
+
+    .navbar-showcase .border-bottom {
+        border-bottom: 2px solid #E3E3E3;
+    }
+
+.nav-footer #dropdownbrowse-categories {
+    background-color: #20D3C2;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    max-width: 14.2em;
+    height: 51px;
+    margin-left: 22.2em;
+    padding: 10px;
+}
+
+.nav-footer #hamburger-icon {
+    padding-left: 4px;
+}
+
+.nav-footer #arrow-down {
+    padding-left: 40px;
+}
+
+.nav-footer .nav-footer-options {
+    display: flex;
+}
 
 
 /*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
