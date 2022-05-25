@@ -266,12 +266,13 @@ body {
 
         .navbar-nav .dropdown .reklam {
             display: flex;
-            margin-left: 50%;
+            margin-left: 43%;
             padding-right: 30px;
             padding-top: 10px;
             gap: 30px;
             text-decoration: none
         }
+
 
             .navbar-nav .dropdown .reklam .text-white {
                 text-decoration: none;
@@ -327,9 +328,12 @@ body {
             height: 46px;
             margin-top: 25px;
             padding-top: 12px;
-            padding-right: 35px;
             border: 1px solid #E3E3E3;
         }
+
+    .navbar-showcase #green-arrow-category {
+        padding-left: 22px;
+    }
 
 
 
@@ -407,6 +411,71 @@ body {
 .nav-footer .nav-footer-options {
     display: flex;
 }
+
+.nav-footer #home-option {
+    padding-left: 30px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #shop-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #products-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #categories-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #pages-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #blog-option {
+    padding-left: 11px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #green-arrow-down {
+    padding-left: 4px;
+}
+
+.nav-footer #green-underlay-thing {
+    position: relative;
+    left: 31px;
+    bottom: 14px;
+}
+
+.nav-footer #navbar-footer-btn {
+    padding-top: 6px;
+    padding-left: 90px;
+}
+
+
 
 
 /*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
