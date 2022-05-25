@@ -26,7 +26,7 @@ namespace Kentaka_Webshop.Models.ContactMessageModels
 
         [Display(Name = "Message")]
         [Required(ErrorMessage = "You need to enter a {0}")]
-        [StringLength(500, ErrorMessage = "{0} must be atleast {2} characters", MinimumLength = 2)]
+        [StringLength(250, ErrorMessage = "{0} must be atleast {2} characters", MinimumLength = 2)]
         public string UserMessage { get; set; }
 
     }

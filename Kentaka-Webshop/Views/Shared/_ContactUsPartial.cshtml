@@ -59,16 +59,40 @@
                     <form asp-action="Index">
                         <div class="form-row">
                             <div class="col-md-12">
-                                <select class="form-control mb-2" placeholder="3">
+
+                                <select asp-for="Form.CategoryName" class="form-control mb-2" placeholder="3">
                                     <option selected="selected" disabled> Product Category</option>
                                     @foreach (var c in Model.Categories)
                                     {
                                         <option>@c.CategoryName</option>
                                     }
                                 </select>
+                                <span asp-validation-for="Form.CategoryName"></span>
                             </div>
-                            <partial name="_ContactFormPartial" model="Model.Form"/>
-                            <span>@Model.Result.Message</span>
+                            <div class="col-md-12">
+                                <input asp-for="Form.UserName" class="form-control mb-2" type="text" placeholder="Name">
+                                <span asp-validation-for="Form.UserName"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <input asp-for="Form.UserEmail" class="form-control mb-2" type="email" placeholder="Email">
+                                <span asp-validation-for="Form.UserEmail"></span>
+                            </div>
+                            <div class="col-md-12">
+                                <input asp-for="Form.Subject" class="form-control mb-2" type="text" placeholder="Subject">
+                                <span asp-validation-for="Form.Subject"></span>
+                            </div>
+
+                            <div>
+                                <textarea asp-for="Form.UserMessage" class="mb-4" id="contact-us-message" cols="60" rows="8" placeholder="Message"></textarea>
+                                <span asp-validation-for="Form.UserMessage"></span>
+                            </div>
+
+
+
+
+                            <div><span>@Model.Result.Message</span></div>
+                            
+
                             <button id="form-submit-btn">SEND MESSAGE</button>
                         </div>
                     </form>
