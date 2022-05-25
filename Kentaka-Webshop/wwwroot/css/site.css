@@ -294,13 +294,13 @@ body {
 
     .navbar-showcase .search-function {
         padding-left: 95px;
-        padding-top: 25px;
+        padding-top: 30px;
     }
 
         .navbar-showcase .search-function #searchfunction {
             border-radius: 30px 0px 0px 30px;
             width: 345px;
-            height: 50px;
+            height: 46px;
             font-family: 'Roboto', sans-serif;
             font-size: 14px;
             font-weight: 400;
@@ -314,6 +314,7 @@ body {
     .navbar-showcase .dropdown {
         height: auto;
         width: auto;
+        padding-top: 5px;
     }
 
         .navbar-showcase .dropdown #dropdownMenuLink {
@@ -322,7 +323,7 @@ body {
             font-family: 'Roboto', sans-serif;
             font-weight: 400;
             width: 150px;
-            height: 50px;
+            height: 46px;
             margin-top: 25px;
             padding-top: 12px;
             padding-right: 35px;
@@ -330,18 +331,54 @@ body {
         }
 
 
-    .navbar-showcase .account-details {
-        display: flex;
-        margin-top: 35px;
-        margin-left: 30px;
+
+    .navbar-showcase .account-details p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 15px;
     }
 
-        .navbar-showcase .account-details p {
-            font-family: 'Roboto', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
-            padding-top: 15px;
-        }
+    .navbar-showcase .account-details {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .navbar-showcase #search-scoped {
+        padding-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .navbar-showcase .user-icon {
+        padding-top: 18px;
+    }
+
+    .navbar-showcase .my-account {
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+
+    .navbar-showcase .heart-icon {
+        padding-left: 28px;
+        padding-top: 18px;
+    }
+
+    .navbar-showcase .compare-icon {
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+
+    .navbar-showcase .bag-icon {
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+
+    .navbar-showcase .money-icon {
+        padding-top: 18px;
+    }
 
 
 /*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
