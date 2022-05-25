@@ -279,10 +279,13 @@ body {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
             }
+            .navbar-nav .dropdown .reklam #box-group-img{
+                padding-bottom: 4px;
+            }
 
-    .navbar-nav #navbarDarkDropdownMenuLink {
-        color: white;
-    }
+            .navbar-nav #navbarDarkDropdownMenuLink {
+                color: white;
+            }
 
 .navbar-showcase {
     display: flex;
@@ -471,7 +474,7 @@ body {
 }
 
 .nav-footer #navbar-footer-btn {
-    padding-top: 6px;
+    padding-top: 8px;
     padding-left: 90px;
 }
 
