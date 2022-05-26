@@ -19,6 +19,7 @@ namespace Kentaka_Webshop.Managers
 
         private readonly SqlDbContext _context;
 
+
         public CategoryManager(SqlDbContext context)
         {
             _context = context;
