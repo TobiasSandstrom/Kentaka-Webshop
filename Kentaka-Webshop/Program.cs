@@ -1,18 +1,31 @@
 using Kentaka_Webshop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 var builder = WebApplication.CreateBuilder(args);
-var connectionString = builder.Configuration.GetConnectionString("Sql") ?? throw new InvalidOperationException("Connection string 'Sql' not found.");
-
+var connectionString = builder.Configuration.GetConnectionString("Sql");
+builder.Services.AddRazorPages();
 builder.Services.AddDbContext<SqlDbContext>(options =>
     options.UseSqlServer(connectionString)); ;
+builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.ConfigureApplicationCookie(x =>
+{
+    x.LoginPath = "/areas/identity/pages/login";
+});
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<SqlDbContext>();;
+builder.Services.Configure<IdentityOptions>(options =>
+{
+    // Default SignIn settings.
+    options.SignIn.RequireConfirmedEmail = false;
+    options.SignIn.RequireConfirmedPhoneNumber = false;
+});
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 builder.Services.AddDbContext<SqlDbContext>(x => x.UseSqlServer(builder.Configuration.GetConnectionString("Sql")));
 var app = builder.Build();
 
