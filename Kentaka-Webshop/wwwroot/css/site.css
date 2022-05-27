@@ -471,6 +471,148 @@ body {
             }
 
 
+
+/*Contact us section*/
+
+#contact-section {
+    position: relative;
+}
+
+    #contact-section #contact-map #img-pin {
+        position: absolute;
+        top: 30%;
+        left: 52%;
+        transform: translate(-50%, -50%);
+    }
+
+    #contact-section #contact-container {
+        margin: auto;
+        height: 850px;
+        width: 1110px;
+        background-color: #0E153D;
+    }
+
+        #contact-section #contact-container #contact-upper {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: #20D3C2 1px solid;
+        }
+
+            #contact-section #contact-container #contact-upper #contact-address,
+            #contact-section #contact-container #contact-upper #contact-phone,
+            #contact-section #contact-container #contact-upper #contact-email {
+                margin-top: 40px;
+                margin-bottom: 10px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #contact-section #contact-container #contact-upper #contact-address {
+                margin-left: 50px;
+            }
+
+            #contact-section #contact-container #contact-upper #contact-email {
+                margin-right: 50px;
+            }
+
+            #contact-section #contact-container #contact-upper i {
+                margin-right: 20px;
+                padding-bottom: 0px;
+                color: #20D3C2;
+                font-size: 24px;
+            }
+
+            #contact-section #contact-container #contact-upper p {
+                color: white;
+                font-size: 16px;
+                font-family: "roboto", 'sans serif';
+            }
+
+        #contact-section #contact-container #contact-lower {
+            margin-top: 50px;
+            display: flex;
+        }
+
+            #contact-section #contact-container #contact-lower #contact-lower-left {
+                margin-left: 50px;
+                max-width: 505px;
+            }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left h3 {
+                    color: #20D3C2;
+                }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left p {
+                    color: white;
+                    max-width: 86%;
+                }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left #follow-us-container {
+                    display: flex;
+                    margin-bottom: 10px;
+                }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left .p-bold {
+                    font-weight: bold;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                    margin-right: 30px;
+                }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left hr {
+                    color: #20D3C2;
+                    height: 2px;
+                    width: 40px;
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+
+                #contact-section #contact-container #contact-lower #contact-lower-left a {
+                    margin-right: 18px;
+                }
+
+                    #contact-section #contact-container #contact-lower #contact-lower-left a :hover {
+                        color: white !important;
+                    }
+
+            #contact-section #contact-container #contact-lower #contact-lower-right {
+                margin-right: 50px;
+            }
+
+                #contact-section #contact-container #contact-lower #contact-lower-right #contact-form {
+                    margin-left: 50px;
+                }
+                    #contact-section #contact-container #contact-lower #contact-lower-right #contact-form .error-text {
+                        color: #b83c33;
+                        margin-top: 0;
+                        margin-bottom: 10px;
+                    }
+
+                #contact-section #contact-container #contact-lower #contact-lower-right #contact-form .white-text{
+                    color: white;
+                }
+                    #contact-section #contact-container #contact-lower #contact-lower-right #contact-form input, #contact-section #contact-container #contact-lower #contact-lower-right #contact-form select {
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+
+                    #contact-section #contact-container #contact-lower #contact-lower-right #contact-form textarea {
+                        padding-left: 10px;
+                        padding-top: 10px;
+                        border-radius: 6px;
+                    }
+
+                #contact-section #contact-container #contact-lower #contact-lower-right #form-submit-btn {
+                    background-color: #20D3C2;
+                    color: #ffffff;
+                    border-radius: 30px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-family: "roboto" sans-serif;
+                    padding: 10px 20px;
+                    border: none;
+                }
+
 /*404 Section*/
 #error-section {
     background-color: #F6F6F6;
@@ -522,6 +664,7 @@ body {
                 width: 170px;
                 height: 50px;
             }
+
 
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 

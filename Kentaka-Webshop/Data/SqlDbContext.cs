@@ -14,5 +14,8 @@ namespace Kentaka_Webshop.Data
         }
 
         public virtual DbSet<TestProductEntity> TestProducts { get; set; } = null!;
+        public virtual DbSet<CategoryEntity> Categories { get; set; }
+        public virtual DbSet<ContactUsMessageEntity> ContactMessages { get; set; }
+
     }
 }

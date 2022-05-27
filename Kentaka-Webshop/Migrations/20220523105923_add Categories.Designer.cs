@@ -3,6 +3,7 @@ using Kentaka_Webshop.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Kentaka_Webshop.Migrations
 {
     [DbContext(typeof(SqlDbContext))]
-    partial class SqlDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220523105923_add Categories")]
+    partial class addCategories
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -36,42 +38,6 @@ namespace Kentaka_Webshop.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("Kentaka_Webshop.Entity.ContactUsMessageEntity", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CategoryName")
-                        .IsRequired()
-                        .HasColumnType("Nvarchar(50)");
-
-                    b.Property<bool>("HasBeenAnswered")
-                        .HasColumnType("bit");
-
-                    b.Property<string>("Subject")
-                        .IsRequired()
-                        .HasColumnType("Nvarchar(50)");
-
-                    b.Property<string>("UserEmail")
-                        .IsRequired()
-                        .HasColumnType("Nvarchar(100)");
-
-                    b.Property<string>("UserMessage")
-                        .IsRequired()
-                        .HasColumnType("Nvarchar(500)");
-
-                    b.Property<string>("UserName")
-                        .IsRequired()
-                        .HasColumnType("Nvarchar(50)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("ContactMessages");
                 });
 
             modelBuilder.Entity("Kentaka_Webshop.Entity.TestProductEntity", b =>
