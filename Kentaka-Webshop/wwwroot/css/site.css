@@ -377,14 +377,18 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+    #logos-section #logos-container img{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 
-/*Review Carousel Section*/
 
-#reviewCarousel-section {
-    background-color: #0E153D;
-    height: 720px;
-}
+    /*Review Carousel Section*/
+    #reviewCarousel-section {
+        background-color: #0E153D;
+        height: 720px;
+    }
 
     #reviewCarousel-section #carouselExampleIndicators2 .carousel-indicators button {
         height: 12px;
