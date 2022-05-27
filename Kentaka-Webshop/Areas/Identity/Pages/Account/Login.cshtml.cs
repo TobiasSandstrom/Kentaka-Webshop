@@ -74,6 +74,8 @@ namespace Kentaka_Webshop.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [DataType(DataType.Password)]
+            [Display(Name = "Password")]
+
             public string Password { get; set; }
 
             /// <summary>
