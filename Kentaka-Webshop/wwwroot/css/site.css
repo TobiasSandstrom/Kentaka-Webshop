@@ -279,13 +279,10 @@ body {
                 font-family: 'Roboto', sans-serif;
                 font-weight: 400;
             }
-            .navbar-nav .dropdown .reklam #box-group-img{
-                padding-bottom: 4px;
-            }
 
-            .navbar-nav #navbarDarkDropdownMenuLink {
-                color: white;
-            }
+    .navbar-nav #navbarDarkDropdownMenuLink {
+        color: white;
+    }
 
 .navbar-showcase {
     display: flex;
@@ -474,10 +471,47 @@ body {
 }
 
 .nav-footer #navbar-footer-btn {
-    padding-top: 8px;
+    padding-top: 6px;
     padding-left: 90px;
 }
 
+.autocom-box {
+    position: absolute;
+    background: white;
+    color: black;
+    width: 325px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0,12);
+    padding: 10px 8px;
+    max-height: 860px;
+    border: 2px solid rgb(221, 221, 221);
+    opacity: 0;
+    pointer-events: none;
+}
+
+    .autocom-box li {
+        list-style: none;
+        width: 100%;
+        cursor: default;
+        border-radius: 3px;
+        display: none;
+    }
+
+        .autocom-box li:hover {
+            background-color: #efefef;
+        }
+
+    .autocom-box.active {
+        padding: 8px 12px;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 1;
+    }
+
+
+    .autocom-box li {
+        display: block;
+    }
 
 
 
