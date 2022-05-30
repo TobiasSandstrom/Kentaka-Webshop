@@ -967,7 +967,27 @@ body {
     width: 100%;
     border-radius: 50px;
 }
-
+#navo .nav-tabs {
+    justify-content: center;
+    font-family: Roboto;
+    
+}
+#navo .nav-item {
+    justify-content: space-between;
+}
+#navo .nav-link {
+    color: #20D3C2;
+    font-size: 26px;
+    justify-content: space-between;
+    border-width: inherit;
+    background: 100%;
+    margin: 0px 0px 0px 160px;
+}
+#navo .nav-item :hover {
+    color: black;
+    
+}
+    
 /**/
 
 
