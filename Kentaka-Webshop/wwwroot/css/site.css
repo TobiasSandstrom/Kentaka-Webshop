@@ -670,6 +670,52 @@ body {
             }
 
 
+
+/*Dynamic header Section*/
+
+#dynamic-header-section {
+    background-color: #0E153D;
+    height: 140px;
+    display: flex;
+}
+
+    #dynamic-header-section #dynamic-header-container {
+        width: 1140px;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        margin: auto;
+    }
+
+        #dynamic-header-section #dynamic-header-container h3 {
+            color: #20D3C2;
+            margin: auto;
+            font-family: 'Roboto', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+        }
+
+        #dynamic-header-section #dynamic-header-container span, #dynamic-header-section #dynamic-header-container a {
+            color: white;
+            margin: auto;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        #dynamic-header-section #dynamic-header-container a {
+            text-decoration: none;
+        }
+
+            #dynamic-header-section #dynamic-header-container a:hover {
+                color: #20D3C2;
+            }
+
+        #dynamic-header-section #dynamic-header-container #header-right {
+            display: flex;
+        }
+
+
 /*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 

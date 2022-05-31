@@ -1,0 +1,13 @@
+﻿
+<div id="dynamic-header-section">
+    <div id="dynamic-header-container">
+        <div id="header-left">
+            <h3>@ViewBag.Title</h3>
+        </div>
+        <div id="header-right">
+            <a asp-controller="Home" asp-action="Index">Home</a>
+            <span> / </span>
+            <a asp-controller="@ViewBag.controller" asp-action="@ViewBag.action">@ViewData["Title"]</a>
+        </div>
+    </div>
+</div>
