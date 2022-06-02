@@ -9,7 +9,7 @@ namespace Kentaka_Webshop_Test
         public void TestAnInteger()
         {
             // ARANGE
-            // Setting up test environment for future account balance.
+            // Setting up test environment for account balance.
             int expected = 50;
 
            
