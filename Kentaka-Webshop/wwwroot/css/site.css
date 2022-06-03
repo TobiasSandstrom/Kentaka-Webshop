@@ -8,8 +8,9 @@ body {
 
 
 /*--------------------------------------------------------------------------------- Rasmus CSS ---------------------------------------------------------------------------------*/
+
 /*Rasmus 30 sale kod*/
-/*---------------------------------------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 .sale-banner .background-image {
@@ -147,7 +148,8 @@ body {
     padding-left: 5px;
     padding-top: 10px;
 }
-/*---------------------------NEW ARRIVALS---------------------------------------*/
+/* Rasmus new arrivals kod */
+
 .product-section {
     display: block;
     margin-left: auto;
@@ -196,7 +198,7 @@ body {
 
 
 
-/*----------------------------------------------------------------------------- FEATURED PRODUCTS ------------------------------------------------------------------------------*/
+/* Rasmus featured products kod */
 
 .product-sections {
     display: block;
@@ -245,7 +247,272 @@ body {
     }
 
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/* Rasmus Navbar kod */
+
+.navbar-nav {
+    background-color: #20D3C2;
+}
+
+    .navbar-nav .dropdown {
+        display: flex;
+        color: white;
+        margin-left: 400px;
+        margin-right: auto;
+    }
+
+        .navbar-nav .dropdown .ENG {
+            padding-right: 15px;
+        }
+
+        .navbar-nav .dropdown .reklam {
+            display: flex;
+            margin-left: 43%;
+            padding-right: 30px;
+            padding-top: 10px;
+            gap: 30px;
+            text-decoration: none
+        }
+
+
+            .navbar-nav .dropdown .reklam .text-white {
+                text-decoration: none;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 400;
+            }
+
+    .navbar-nav #navbarDarkDropdownMenuLink {
+        color: white;
+    }
+
+.navbar-showcase {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+    .navbar-showcase .kenkata-logo {
+        padding-top: 40px;
+        padding-left: 400px;
+    }
+
+    .navbar-showcase .search-function {
+        padding-left: 95px;
+        padding-top: 30px;
+    }
+
+        .navbar-showcase .search-function #searchfunction {
+            border-radius: 30px 0px 0px 30px;
+            width: 345px;
+            height: 46px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            border: 1px solid #E3E3E3;
+            padding-left: 25px;
+            outline: none;
+        }
+
+
+
+    .navbar-showcase .dropdown {
+        height: auto;
+        width: auto;
+        padding-top: 5px;
+    }
+
+        .navbar-showcase .dropdown #dropdownMenuLink {
+            background-color: white;
+            color: black;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            width: 150px;
+            height: 46px;
+            margin-top: 25px;
+            padding-top: 12px;
+            border: 1px solid #E3E3E3;
+        }
+
+    .navbar-showcase #green-arrow-category {
+        padding-left: 22px;
+    }
+
+
+
+    .navbar-showcase .account-details p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        padding-top: 15px;
+    }
+
+    .navbar-showcase .account-details {
+        display: flex;
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+    .navbar-showcase #search-scoped {
+        padding-top: 30px;
+        max-width: 100%;
+        height: auto;
+    }
+
+
+    .navbar-showcase .user-icon {
+        padding-top: 18px;
+    }
+
+    .navbar-showcase .my-account {
+        padding-top: 6px;
+        padding-left: 6px;
+    }
+
+    .navbar-showcase .heart-icon {
+        padding-left: 28px;
+        padding-top: 18px;
+    }
+
+    .navbar-showcase .compare-icon {
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+
+    .navbar-showcase .bag-icon {
+        padding-left: 16px;
+        padding-top: 12px;
+    }
+
+    .navbar-showcase .money-icon {
+        padding-top: 18px;
+    }
+
+    .navbar-showcase .border-bottom {
+        border-bottom: 2px solid #E3E3E3;
+    }
+
+.nav-footer #dropdownbrowse-categories {
+    background-color: #20D3C2;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    max-width: 14.2em;
+    height: 51px;
+    margin-left: 22.2em;
+    padding: 10px;
+}
+
+.nav-footer #hamburger-icon {
+    padding-left: 4px;
+}
+
+.nav-footer #arrow-down {
+    padding-left: 40px;
+}
+
+.nav-footer .nav-footer-options {
+    display: flex;
+}
+
+.nav-footer #home-option {
+    padding-left: 30px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #shop-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #products-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #categories-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #pages-option {
+    padding-left: 13px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #blog-option {
+    padding-left: 11px;
+    padding-top: 15px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-footer #green-arrow-down {
+    padding-left: 4px;
+}
+
+.nav-footer #green-underlay-thing {
+    position: relative;
+    left: 31px;
+    bottom: 14px;
+}
+
+.nav-footer #navbar-footer-btn {
+    padding-top: 6px;
+    padding-left: 90px;
+}
+
+.autocom-box {
+    position: absolute;
+    background: white;
+    color: black;
+    width: 325px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 5px 3px rgba(0,0,0,0,12);
+    padding: 10px 8px;
+    max-height: 860px;
+    border: 2px solid rgb(221, 221, 221);
+    opacity: 0;
+    pointer-events: none;
+}
+
+    .autocom-box li {
+        list-style: none;
+        width: 100%;
+        cursor: default;
+        border-radius: 3px;
+        display: none;
+    }
+
+        .autocom-box li:hover {
+            background-color: #efefef;
+        }
+
+    .autocom-box.active {
+        padding: 8px 12px;
+        opacity: 1;
+        pointer-events: auto;
+        z-index: 1;
+    }
+
+
+    .autocom-box li {
+        display: block;
+    }
+
 
 
 /*--------------------------------------------------------------------------------- Tobias CSS ---------------------------------------------------------------------------------*/
